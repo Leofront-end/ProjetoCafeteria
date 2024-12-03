@@ -1,0 +1,65 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: calc(100vh - 70px);
+}
+
+header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 5px;
+}
+
+h1 { margin: auto; }
+
+img{ width: 40px;}
+
+main {
+    height: 100%;
+    background:  linear-gradient(rgba(255, 255, 255, 0.815), rgba(170, 96, 96, 0.836)), url("../img/FundoIndex.jpg") no-repeat right top fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background: hsla(0, 0%, 100%, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+label {
+    font: 1.5em cursive;
+}
+
+input {
+    width: 95%;
+    height: 20px;
+}
+
+.Enviar {
+    margin-top: 10px;
+    width: 95%;
+    height: 40px;
+    transition: .2s;
+    border: none;
+    border-radius: 5px;
+    font: 1em sans-serif;
+    font-weight: bold;
+}
+
+.Enviar:hover{
+    background: #ff9100;
+}
+
+
+

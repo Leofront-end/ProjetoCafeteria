@@ -1,0 +1,111 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: calc(100% - 70px);
+    width: 100vw;
+    overflow: hidden;
+}
+
+header {
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 5px;
+}
+
+h1 { margin: auto; }
+
+img{
+    width: 40px;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    background:  linear-gradient(rgba(255, 255, 255, 0.815), hsla(0, 30%, 52%, 0.836)), url("../img/FundoIndex.jpg") no-repeat right top fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+}
+
+table {
+    margin: 100px;
+    padding: 10px;
+    display: block;
+    max-height: 90%;
+    overflow: auto;
+    backdrop-filter: blur(6px);
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 4px 4px 3px 0px #00000087;
+}
+
+
+th {
+    height: 70px;
+    width: 100%;
+    padding: 5px;
+    background-color: #3E2F1B;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+}
+
+td {   
+    height: 30px;
+    border-radius: 5px; 
+    padding: 5px;
+}
+
+/*Efeito zebra*/
+tr:nth-child(2n+2) {
+    background: #e7e7e7;
+}
+
+tr:hover {
+    background-color: #3E2F1B;
+    color: #fff;
+}
+
+a { 
+    cursor: pointer;
+    text-decoration: none;
+    color: #ff9100;
+    transition: .2s;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #fff;
+}
+
+h3 {
+    background-color: #3E2F1B;
+    padding: 5px;
+    border-radius:5px ;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        overflow: hidden;
+    }
+    table {
+        margin: 10px;
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    main {
+        height: 100vh;
+        width: 100vw;
+        background:  linear-gradient(rgba(255, 255, 255, 0.815), hsla(0, 30%, 52%, 0.836)), url("../img/FundoIndex.jpg") no-repeat right top fixed;
+        background-size: cover;
+    }
+}
