@@ -4,9 +4,7 @@
     margin: 0px;
     padding: 0px;
 }
-body {
-      overflow: hidden;
-}
+body { overflow: hidden;}
 
 header {
     height: 60px;
@@ -18,9 +16,7 @@ header {
     padding: 5px;
 }
 
-.logo {
-    width: 40px;
-}
+.logo { width: 40px;}
 
 nav {
     display: flex;
@@ -35,9 +31,7 @@ a {
     transition: all 1s;
 }
 
-a:hover {
-    color: #ff9100;
-}
+a:hover { color: #ff9100;}
 
 main {
     height: 100vh;
@@ -48,9 +42,7 @@ main {
     justify-content: space-around;
 }
 
-.copo {
-    height: 550px;
-}
+.copo { height: 550px;}
 
 h1 {
     padding: 10px;
@@ -67,8 +59,7 @@ h1 {
     font: 3em cursive;
     color: #3E2F1B;
     position: relative;
-    animation: surgindo 3s;
-   
+    animation: surgindo 3s;  
 }
 
 @keyframes surgindo {
@@ -82,17 +73,53 @@ h1 {
     }
 }
 
-@media screen and (max-width: 1000px) {
+@keyframes surgindoResponsivo {
+    0% {
+        right: -300px;
+        opacity: 0;
+    }
+    100% {
+        right: 0px;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 600px) {
     main {
         flex-direction: column-reverse;
     }
+    .copo { 
+        height: 300px;
+    }
 
-    .copo { height: 300px;}
+    h1 {
+        font: 1.5em cursive;
+        z-index: 1;
+    }
 
-    section { display: flex;}
+    .Cafeteria { font: 1.5em cursive; } 
+}
 
-    h1,.Cafeteria {
-        font: 1.9em cursive;
-        margin: 5px;
+@media screen and (min-width:600px ) and (max-width: 1000px){ 
+    .copo { 
+        height: 300px;
+        z-index: 1;
+        position: relative;
+    }
+
+    h1 {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        font: 3em cursive;
+        gap: 5px;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .Cafeteria {
+        font: 1em cursive;
+        position: relative;
+        animation: surgindoResponsivo 3s;
     }
 }

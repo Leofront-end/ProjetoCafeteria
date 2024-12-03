@@ -3,9 +3,7 @@
     padding: 0px;
 }
 
-body{
-    height: calc(100vh - 70px);
-}
+body { height: calc(100vh - 70px);}
 
 header {
     height: 60px;
@@ -17,7 +15,7 @@ header {
 
 h1 { margin: auto; }
 
-img{ width: 40px;}
+img { width: 40px;}
 
 main {
     height: 100%;
@@ -37,9 +35,7 @@ form {
     gap: 2px;
 }
 
-label {
-    font: 1.5em cursive;
-}
+label { font: 1.5em cursive;}
 
 input {
     width: 95%;
@@ -57,9 +53,4 @@ input {
     font-weight: bold;
 }
 
-.Enviar:hover{
-    background: #ff9100;
-}
-
-
-
+.Enviar:hover { background: #ff9100;}

@@ -3,7 +3,7 @@
     padding: 0px;
 }
 
-body{
+body {
     height: calc(100% - 70px);
     width: 100vw;
     overflow: hidden;
@@ -20,9 +20,7 @@ header {
 
 h1 { margin: auto; }
 
-img{
-    width: 40px;
-}
+img { width: 40px;}
 
 main {
     height: 100vh;
@@ -31,7 +29,6 @@ main {
     background-size: cover;
     display: flex;
     justify-content: center;
-
 }
 
 table {
@@ -64,9 +61,7 @@ td {
 }
 
 /*Efeito zebra*/
-tr:nth-child(2n+2) {
-    background: #e7e7e7;
-}
+tr:nth-child(2n+2) { background: #e7e7e7;}
 
 tr:hover {
     background-color: #3E2F1B;
@@ -81,9 +76,7 @@ a {
     font-weight: bold;
 }
 
-a:hover {
-    color: #fff;
-}
+a:hover { color: #fff;}
 
 h3 {
     background-color: #3E2F1B;
